@@ -61,7 +61,7 @@ class IMChatView: UIView {
         
         NotificationCenter.default.addObserver(self,
         selector: #selector(self.keyboardNotification(notification:)),
-        name: UIResponder.keyboardWillChangeFrameNotification,
+        name: NSNotification.Name.UIKeyboardWillChangeFrame,
         object: nil)
     }
     
@@ -146,8 +146,8 @@ extension IMChatView {
     
     @objc func keyboardNotification(notification: NSNotification) {
         var tmp: CGFloat = 0
-        
-        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+        //UIKeyboardFrameEndUserInfoKey
+        if let keyboardFrame: NSValue = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardRectangle = keyboardFrame.cgRectValue
             let endFrameY = keyboardRectangle.origin.y
             
