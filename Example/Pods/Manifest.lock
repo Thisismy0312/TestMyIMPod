@@ -1,0 +1,31 @@
+PODS:
+  - lottie-ios (3.1.8)
+  - Starscream (4.0.4)
+  - SwiftyJSON (5.0.0)
+  - TestMyIMPod (0.1.0):
+    - lottie-ios
+    - Starscream
+    - SwiftyJSON
+
+DEPENDENCIES:
+  - TestMyIMPod (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - Starscream
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  TestMyIMPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TestMyIMPod: 909b38b44809116f00710678faf2dafb5ade590d
+
+PODFILE CHECKSUM: f25e9b2ee081caf6b5aca20eb17e73dde8c7df5a
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,37 @@
+{
+  "name": "TestMyIMPod",
+  "version": "0.1.0",
+  "summary": "A short description of TestMyIMPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Thisismy0312/TestMyIMPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Thisismy0312": "qq867327466@163.com"
+  },
+  "source": {
+    "git": "https://github.com/Thisismy0312/TestMyIMPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TestMyIMPod/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "Starscream": [
+
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "lottie-ios": [
+
+    ]
+  }
+}

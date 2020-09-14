@@ -12,9 +12,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19729A97B053E96941005DDC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2B55DD890016937D86D3CBE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		306D328158467A620E8009C4 /* TestMyIMPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestMyIMPod.podspec; path = ../TestMyIMPod.podspec; sourceTree = "<group>"; };
+		19729A97B053E96941005DDC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2B55DD890016937D86D3CBE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		306D328158467A620E8009C4 /* TestMyIMPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestMyIMPod.podspec; path = ../TestMyIMPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A743C757A1F1FF58860028A /* Pods-TestMyIMPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMyIMPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestMyIMPod_Tests/Pods-TestMyIMPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		412F1032A50B158CDB3A0959 /* Pods-TestMyIMPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMyIMPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestMyIMPod_Tests/Pods-TestMyIMPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TestMyIMPod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMyIMPod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +41,6 @@
 				3A743C757A1F1FF58860028A /* Pods-TestMyIMPod_Tests.debug.xcconfig */,
 				412F1032A50B158CDB3A0959 /* Pods-TestMyIMPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -178,11 +174,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestMyIMPod_Tests/Pods-TestMyIMPod_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TestMyIMPod/TestMyIMPod.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TestMyIMPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

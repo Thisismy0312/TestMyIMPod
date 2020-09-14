@@ -1,0 +1,6 @@
+framework module TestMyIMPod {
+  umbrella header "TestMyIMPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
